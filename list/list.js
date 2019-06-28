@@ -33,6 +33,15 @@ class List {
     --this.length;
     return returnValue;
   }
+
+  unshift(item) {
+    for(let i = this.length; i > -1; i--) {
+      this.data[i+1] = this.data[i];
+      this.length++;
+    }
+    this.data[0] = item;
+    return this.length;
+  }
 }
 
 module.exports = List;
