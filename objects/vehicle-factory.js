@@ -8,7 +8,7 @@ function CarFactory() {
     drive: function () {
       return 'moving forward';
     },
-    break: function () {
+    stop: function () {
       return 'stopping';
     },
   };
@@ -22,14 +22,14 @@ function MotorcycleFactory() {
     drive: function () {
       return 'moving forward';
     },
+    stop: function () {
+      return 'stopping';
+    },
     wheelie: function () {
       return 'pop a wheelie';
-    },
-    break: function () {
-      return 'stopping';
     },
   };
   return motorcycle;
 }
 
-module.exports = { CarFactory, MotorcycleFactory}
+module.exports = { CarFactory, MotorcycleFactory};

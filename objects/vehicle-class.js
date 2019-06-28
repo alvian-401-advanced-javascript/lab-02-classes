@@ -10,26 +10,30 @@ class Vehicle {
     return 'Moving Forward';
   }
 
-  break() {
+  stop() {
     return 'Stopping';
   }
 }
 
 class Car extends Vehicle {
-//   constructor() {
-//     super();
-//     // this.wheels = 4;
-//   }
+  constructor(name) {
+    super(name);
+    this.wheels = 4;
+  }
 }
 
 class Motorcycle extends Vehicle {
+  constructor(name) {
+    super(name);
+    this.wheels = 2;
+  }
   wheelie() {
     return 'Pop a wheelie';
   }
 }
 
-// let mazda = new Car('mazda', 4);
-// console.log(mazda);
+let mazda = new Car('mazda');
+console.log(mazda);
 
 
 module.exports = {

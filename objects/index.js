@@ -13,14 +13,14 @@ console.log(harley.name, harley.wheelie(), harley.stop());
 
 // Implement a car and motorcycle using a Class
 const audi = new Car('Audi A5');
-console.log(audi.name, audi.drive(), audi.break());
+console.log(audi.name, audi.drive(), audi.stop());
 
 const Yamaha = new Motorcycle('Yamaha 350');
-console.log(Yamaha.name, Yamaha.wheelie(), Yamaha.break());
+console.log(Yamaha.name, Yamaha.wheelie(), Yamaha.stop());
 
 // Implement a car and motorcycle using a Factory
 const factoryCar = factoryFunction.CarFactory();
-console.log(factoryCar.name, factoryCar.drive(), factoryCar.break());
+console.log(factoryCar.name, factoryCar.drive(), factoryCar.stop());
 
 const factoryBike = factoryFunction.MotorcycleFactory();
-console.log(factoryBike.name, factoryBike.wheelie(), factoryBike.break());
+console.log(factoryBike.name, factoryBike.wheelie(), factoryBike.stop());
