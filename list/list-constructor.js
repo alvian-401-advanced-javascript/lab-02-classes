@@ -40,10 +40,29 @@ List.prototype.unshift = function(item) {
   return this.length;
 };
 
-// List.prototype.forEach = function (callback) {
-//   for(let i = 0; i < list.length; i++) {
-    
-//   }
-// };
+List.prototype.forEach = function (callback) {
+  if (this.length)
+    for(let i = 0; i < this.length; i++) {
+      callback(this[i], i);
+    }
+};
 
+List.prototype.filter = function (callback) {
+  if ( ! this.length) {return undefined; }
+  let result = new List();
+  for (let i = 0; i < this.length; i++) {
+    if (callback(this[i])) {
+      result.push(this[i], i);
+    }
+  }
+  return result;
+};
+
+List.prototype.reduce = function(callback, state) {
+  if (! this.length ) {return undefined;}
+  for (let i = 0; i < this.length; i++) {
+    state = callback(state, this[i], i);
+  }
+  return state;
+};
 module.exports = List;
