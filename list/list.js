@@ -42,6 +42,25 @@ class List {
     this.data[0] = item;
     return this.length;
   }
+
+  filter(callback) {
+    if ( ! this.length) {return undefined; }
+    let result = new List();
+    for (let i = 0; i < this.length; i++) {
+      if (callback(this[i])) {
+        result.push(this[i], i);
+      }
+    }
+    return result;
+  }
+
+  reduce(callback, state) {
+    if (! this.length ) {return undefined;}
+    for (let i = 0; i < this.length; i++) {
+      state = callback(state, this[i], i);
+    }
+    return state;
+  }
 }
 
 module.exports = List;

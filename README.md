@@ -6,7 +6,7 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/alvian-401-advanced-javascript/lab-02-classes)
-* [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-01.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-02-classes)
+* [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-02-classes.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-02-classes)
 
 
 
@@ -14,13 +14,11 @@
 
 
 ### 'list.js'
-Exports list class with 4 methods
+Exports list class with `pop()`, `shift()`, `unshift()`, `push()`, `forEach()`, `reduce()`, and `filter()` methods
 
 ### 'list-constructor.js'
-Exports list constructor with 4 methods
+Exports list constructor with `pop()`, `shift()`, `unshift()`, `push()`, `forEach()`, `reduce()`, and `filter()` methods using contructors
 
-
-##### Exported Values and Methods
 
 
 #### Running the app
@@ -34,9 +32,3 @@ Exports list constructor with 4 methods
   * `npm test`
   * `npm run lint`
 
-* What assertions were made?
-  * `sayHello()` returns null if param is not a string
-* What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
